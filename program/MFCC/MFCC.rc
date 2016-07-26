@@ -1,0 +1,332 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\MFCC.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MFCC.ico"
+IDI_SNIFFER             ICON                    "res\\20141012102242870_easyicon_net_32.ico"
+IDI_ICON7               ICON                    "D:\\迅雷下载\\2014101406110942_easyicon_net_16.ico"
+IDI_ICON5               ICON                    "D:\\迅雷下载\\20141011083839303_easyicon_net_16.ico"
+IDI_ICON4               ICON                    "D:\\迅雷下载\\20141011083822801_easyicon_net_16.ico"
+IDI_ICON3               ICON                    "D:\\迅雷下载\\20141011083805579_easyicon_net_16.ico"
+IDI_ICON2               ICON                    "D:\\迅雷下载\\20141011083740293_easyicon_net_16.ico"
+IDI_ICON1               ICON                    "res\\2014101108373093_easyicon_net_16.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MFCC"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "网络嗅探器，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "燕东 707班",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_MFCC_DIALOG DIALOGEX 0, 0, 411, 320
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "网络嗅探器"
+MENU IDR_MENU_TOP
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_GROUP1,7,16,397,30,WS_GROUP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT1,57,22,99,13,WS_GROUP | NOT WS_TABSTOP
+    LTEXT           "过滤器：",IDC_STATIC,22,26,28,8
+    PUSHBUTTON      "过滤",IDC_BUTTON1,177,22,50,14
+    PUSHBUTTON      "重置",IDC_BUTTON2,249,22,50,14
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_NOTOOLTIPS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,154,389,74
+    EDITTEXT        IDC_EDIT3,243,239,156,66,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_AUTOARRANGE | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,48,389,103
+    EDITTEXT        IDC_EDIT2,11,240,223,65,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | NOT WS_BORDER | WS_VSCROLL
+END
+
+IDD_FILTER_DIALOG DIALOGEX 0, 0, 284, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "过滤器设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,40,16,220,111,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FILTER_STRING,39,137,220,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FILTER_NAME,38,158,221,14,ES_AUTOHSCROLL
+    LTEXT           "内容：",IDC_STATIC,14,139,25,8
+    LTEXT           "名称：",IDC_STATIC,14,161,25,8
+    PUSHBUTTON      "修改",IDC_CHANGEADD,59,178,51,13
+    PUSHBUTTON      "添加",IDC_APPEND,124,177,50,14
+    PUSHBUTTON      "选择",IDC_SELECT,184,177,50,14
+END
+
+IDD_STATISTIC DIALOGEX 0, 0, 555, 272
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "统计信息"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_BITMAP_ONE,"Static",SS_BLACKFRAME,34,35,203,118
+    CONTROL         "",IDC_BITMAP_TWO,"Static",SS_BLACKFRAME,264,35,203,118
+    CONTROL         "",IDC_BITMAP_FLAG,"Static",SS_WHITEFRAME,483,35,51,114
+    CONTROL         "",IDC_BITMAP_DOWN,"Static",SS_BLACKFRAME,36,169,430,81
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MFCC.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "MFCC.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_MFCC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 404
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 313
+    END
+
+    IDD_FILTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_STATISTIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 548
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 265
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_TOP MENU 
+BEGIN
+    POPUP "操作"
+    BEGIN
+        MENUITEM "开始监听",                        ID_START
+        MENUITEM "暂停监听",                        ID_SUSPEND
+        MENUITEM "停止监听",                        ID_STOP
+    END
+    POPUP "网络适配器"
+    BEGIN
+        MENUITEM SEPARATOR
+    END
+    POPUP "过滤器"
+    BEGIN
+        MENUITEM "过滤当前内容",                      ID_FILTER_CUR
+        MENUITEM "设置",                          ID_SET_FILTER
+    END
+    POPUP "查看"
+    BEGIN
+        MENUITEM "统计信息",                        ID_COUNT
+    END
+    POPUP "帮助"
+    BEGIN
+        POPUP "改变提示语言"
+        BEGIN
+            MENUITEM "英语",                          ID_ENG
+            MENUITEM "汉语",                          ID_CHI
+        END
+        MENUITEM "关于",                          ID_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_SAVE_TOOL
+    BUTTON      ID_OPEN_TOOL
+    BUTTON      ID_START_TOOl
+    BUTTON      ID_SUSPEND_TOOL
+    BUTTON      ID_STOP_TOOL
+    BUTTON      ID_SETTING_TOOL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR1            BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MFCC(&A)..."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SAVE_TOOL            "保存到文件"
+    ID_OPEN_TOOL            "打开dump文件"
+    ID_START_TOOl           "开始监听"
+    ID_STOP_TOOL            "停止监听"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SETTING_TOOL         "设置"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\MFCC.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
