@@ -20,6 +20,10 @@
 #define IDI_ICON7                       148
 #define IDD_DIALOG1                     149
 #define IDD_STATISTIC                   149
+
+#define ID_NEWMENU						150
+#define EditTimer						151
+
 #define IDC_EDIT1                       1002
 #define IDC_BUTTON1                     1003
 #define IDC_BUTTON2                     1004

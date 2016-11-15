@@ -1,1 +1,6 @@
 ~*
+program/Debug
+program/MFCC/Debug
+program/MFCC/*.user
+program/*.ncb
+program/MFCC/*.APS

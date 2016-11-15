@@ -45,7 +45,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="C:\WpdPack_4_1_2\WpdPack\Include"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)\Include&quot;"
 				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG;WPCAP;HAVE_REMOTE;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -70,7 +70,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="wpcap.lib ws2_32.lib"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="C:\WpdPack_4_1_2\WpdPack\Lib"
+				AdditionalLibraryDirectories="&quot;$(ProjectDir)/Lib&quot;"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				TargetMachine="1"
@@ -357,15 +357,19 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\..\..\..\Ñ¸À×ÏÂÔØ\20141011083740293_easyicon_net_16.ico"
-				>
-			</File>
-			<File
 				RelativePath=".\res\20141011083740293_easyicon_net_16.ico"
 				>
 			</File>
 			<File
 				RelativePath=".\res\20141011083740293_easyicon_net_16.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\res\20141011083805579_easyicon_net_16.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\res\20141011083805579_easyicon_net_16.ico"
 				>
 			</File>
 			<File
@@ -373,27 +377,11 @@
 				>
 			</File>
 			<File
-				RelativePath=".\res\20141011083805579_easyicon_net_16.ico"
-				>
-			</File>
-			<File
-				RelativePath=".\res\20141011083805579_easyicon_net_16.ico"
-				>
-			</File>
-			<File
-				RelativePath="..\..\..\..\..\..\Ñ¸À×ÏÂÔØ\20141011083822801_easyicon_net_16.ico"
-				>
-			</File>
-			<File
 				RelativePath=".\res\20141011083822801_easyicon_net_16.ico"
 				>
 			</File>
 			<File
 				RelativePath=".\res\20141011083822801_easyicon_net_16.ico"
-				>
-			</File>
-			<File
-				RelativePath="..\..\..\..\..\..\Ñ¸À×ÏÂÔØ\20141011083839303_easyicon_net_16.ico"
 				>
 			</File>
 			<File
@@ -406,10 +394,6 @@
 			</File>
 			<File
 				RelativePath=".\res\20141012102242870_easyicon_net_32.ico"
-				>
-			</File>
-			<File
-				RelativePath="..\..\..\..\..\..\Ñ¸À×ÏÂÔØ\2014101406110942_easyicon_net_16.ico"
 				>
 			</File>
 			<File

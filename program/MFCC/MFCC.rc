@@ -72,11 +72,11 @@ END
 // remains consistent on all systems.
 IDR_MAINFRAME           ICON                    "res\\MFCC.ico"
 IDI_SNIFFER             ICON                    "res\\20141012102242870_easyicon_net_32.ico"
-IDI_ICON7               ICON                    "D:\\я╦ювобть\\2014101406110942_easyicon_net_16.ico"
-IDI_ICON5               ICON                    "D:\\я╦ювобть\\20141011083839303_easyicon_net_16.ico"
-IDI_ICON4               ICON                    "D:\\я╦ювобть\\20141011083822801_easyicon_net_16.ico"
-IDI_ICON3               ICON                    "D:\\я╦ювобть\\20141011083805579_easyicon_net_16.ico"
-IDI_ICON2               ICON                    "D:\\я╦ювобть\\20141011083740293_easyicon_net_16.ico"
+IDI_ICON7               ICON                    "res\\2014101406110942_easyicon_net_16.ico"
+IDI_ICON5               ICON                    "res\\20141011083839303_easyicon_net_16.ico"
+IDI_ICON4               ICON                    "res\\20141011083822801_easyicon_net_16.ico"
+IDI_ICON3               ICON                    "res\\20141011083805579_easyicon_net_16.ico"
+IDI_ICON2               ICON                    "res\\20141011083740293_easyicon_net_16.ico"
 IDI_ICON1               ICON                    "res\\2014101108373093_easyicon_net_16.ico"
 
 /////////////////////////////////////////////////////////////////////////////
